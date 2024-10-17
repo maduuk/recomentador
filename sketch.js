@@ -24,6 +24,9 @@ function draw() {
 
 function geraRecomendacao(idade) {
   if(idade >= 10) {
+    if(idade >= 14) {
+    
+    
     return "As aventuras de pi";
   } else {
     return "A viagem de chihiro";
