@@ -2,15 +2,27 @@
 
 // a viagem de chihiro, LIVRE, fantaia, aventura
 // guardios da galaxia, 12, fantasia, aventura
+
 // as aventurs de pi, 10, drama, fantasia, aventura
 // paddington, LIVRE, fantasia, aventura
 // ladroes de bicicleta, 12, drama
 // o menino que decobriu o vento, 14, drama
 
+
 function setup() {
   createCanvas(400, 400);
+  campoIdade = createInput("15");
 }
 
 function draw() {
   background(220);
+  let idade = campoIdade;
+  let recomendacao = " geraRecomendacao();
+  text(recomendacao, width / 2, heigth / 2);
 }
+
+function geraRecomendacao() {
+  if(idade >= 10) {
+    return "As aventuras de pi";
+
+
