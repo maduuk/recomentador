@@ -8,21 +8,22 @@
 // ladroes de bicicleta, 12, drama
 // o menino que decobriu o vento, 14, drama
 
+let campoIdade;
 
 function setup() {
   createCanvas(400, 400);
-  campoIdade = createInput("15");
+  campoIdade = createInput("5");
 }
 
 function draw() {
   background(220);
-  let idade = campoIdade;
-  let recomendacao = " geraRecomendacao();
+  let idade = campoIdade.value();
+  let recomendacao = " geraRecomendacao(idade);
   text(recomendacao, width / 2, heigth / 2);
 }
 
-function geraRecomendacao() {
+function geraRecomendacao(idade) {
   if(idade >= 10) {
     return "As aventuras de pi";
-
-
+  } else {
+    return "A viagem de chihiro";
