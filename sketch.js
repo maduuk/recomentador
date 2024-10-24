@@ -1,4 +1,10 @@
-// fantasia, aventura, drama
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+}// fantasia, aventura, drama
 
 // a viagem de chihiro, LIVRE, fantaia, aventura
 // guardios da galaxia, 12, fantasia, aventura
@@ -29,4 +35,4 @@ function geraRecomendacao(idade) {
     
     return "As aventuras de pi";
   } else {
-    return "A viagem de chihiro";
+    return "A viagem de chihir
